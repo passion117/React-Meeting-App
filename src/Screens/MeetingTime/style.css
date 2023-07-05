@@ -1,0 +1,34 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  color: #e91e63;
+  z-index: 100;
+}
+
+.new-meeting {
+  margin-top: 100;
+  text-align: center;
+}
+
+.new-meeting .react-add-to-calendar__dropdown ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.new-meeting .react-add-to-calendar__button a {
+  color: #40a9ff !important;
+}
+
+.new-meeting .react-add-to-calendar__button {
+  border: 1px solid #40a9ff;
+  padding: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,238 @@
+.home {
+  position: fixed;
+  top: 10px;
+  background-color: #fff;
+  height: calc(100vh - 20px);
+  color: black;
+  text-align: center;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  overflow: auto;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  color: #e91e63;
+  z-index: 100;
+}
+
+.home h1 {
+  font-weight: lighter;
+}
+
+.ant-dropdown-link {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 50;
+  font-size: 1.5em;
+  padding: 0 5px;
+  cursor: pointer !important;
+}
+
+.ant-list-item-content {
+  flex: 0 !important;
+}
+
+.data-card {
+  width: 100%;
+  min-height: 100px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.data {
+  position: relative;
+  width: 100%;
+  min-height: 110px;
+  padding: 10px;
+  padding-left: 110px;
+  z-index: 2;
+  background: #fff;
+}
+
+.data .img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 90px;
+  width: 90px;
+  margin-right: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.data img {
+  border-radius: 5px;
+}
+
+.data span.name {
+  display: block;
+  font-weight: bold;
+}
+
+.data span.place,
+.data span.time,
+.data span.info {
+  display: block;
+}
+
+.data span.info {
+  margin-top: 5px;
+  display: block;
+}
+
+.data span.cancelled {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: -100px;
+}
+
+.actions {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
+
+.actions .react-add-to-calendar {
+  position: relative;
+  display: inline-block;
+  border: 1px solid;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  padding: 4.5px 15px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  color: rgba(0, 0, 0, 0.65);
+  margin: 5px 3px;
+}
+
+.actions .react-add-to-calendar__button {
+  display: block;
+}
+
+.actions .react-add-to-calendar__dropdown {
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+}
+
+.actions .react-add-to-calendar__dropdown ul {
+  list-style: none;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: white;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.actions .btn {
+  margin: 5px 0;
+}
+
+.notification {
+  background: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 5px 10px;
+  position: relative;
+  padding-right: 30px;
+  /* display: none; */
+}
+
+.notification p {
+  margin: 0;
+  padding: 0;
+}
+
+.notification .notification-close-btn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.notification.success {
+  background: #ff4081;
+  color: white;
+}
+
+.rating {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  text-align: center;
+}
+
+.rating p,
+ul.ant-rate {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.rating .my-rating {
+  margin-bottom: 10px;
+}
+
+.data-card.expired {
+  color: darkgray;
+}
+
+.__react_modal_image__header {
+  padding: 5px;
+}
+
+.data-card.no-data {
+  position: fixed;
+  width: 120px;
+  padding: 15px 20px;
+  top: 65px;
+  left: calc(50% - 60px);
+  min-height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.03);
+  animation: showNoData 3s;
+  opacity: 1;
+}
+
+@keyframes showNoData {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
